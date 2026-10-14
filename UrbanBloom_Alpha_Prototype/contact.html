@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Make an enquiry | Urban Bloom Florist, Auckland</title>
+<meta name="description" content="Send an enquiry to Urban Bloom Florist about flowers, weddings, events or corporate services.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<script src="js/main.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html">Urban <span>Bloom</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav aria-label="Main">
+      <ul class="nav-list" id="site-nav"><li><a href="index.html">Home</a></li><li><a href="products.html">Flowers</a></li><li><a href="weddings-events.html">Weddings &amp; Events</a></li><li><a href="corporate.html">Corporate</a></li><li><a href="delivery-faq.html">Delivery &amp; FAQ</a></li><li class="nav-cta"><a href="contact.html" aria-current="page">Make an enquiry</a></li></ul>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="page-hero"><div class="wrap"><h1>Make an enquiry</h1><p>Tell us what you need and we will reply with options and pricing. This form does not take payment.</p></div></section>
+<section class="section"><div class="wrap two-col">
+  <div>
+    <div id="form-success" class="form-success" tabindex="-1" role="status" hidden><strong></strong> Your enquiry has been recorded in this prototype. In the live site it will be sent to Urban Bloom.</div>
+    <form id="enquiry-form" class="form" novalidate>
+      <div class="field"><label for="name">Your name</label><input id="name" name="name" type="text" autocomplete="name" required aria-describedby="name-err"><div class="error" id="name-err"></div></div>
+      <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-err"><div class="error" id="email-err"></div></div>
+      <div class="field"><label for="phone">Phone (optional)</label><input id="phone" name="phone" type="tel" autocomplete="tel" aria-describedby="phone-err"><div class="error" id="phone-err"></div></div>
+      <div class="field"><label for="enquiryType">Enquiry about</label><select id="enquiryType" name="enquiryType" required aria-describedby="type-err"><option value="">Choose one</option><option value="occasion">Flowers for an occasion</option><option value="wedding">Wedding</option><option value="event">Private event</option><option value="corporate">Corporate flowers</option><option value="other">Something else</option></select><div class="error" id="type-err"></div></div>
+      <div class="field"><label for="date">Date needed (optional)</label><input id="date" name="date" type="date"><div class="hint">For events, include the date and location in your message.</div></div>
+      <div class="field"><label for="message">Your message</label><textarea id="message" name="message" required aria-describedby="msg-err"></textarea><div class="hint">Include delivery suburb, colours, budget and any add-ons.</div><div class="error" id="msg-err"></div></div>
+      <button class="btn" type="submit">Send enquiry</button>
+    </form>
+  </div>
+  <div class="info-box"><h3>Urban Bloom Florist</h3>
+    <dl><dt>Phone</dt><dd><a href="tel:090000001">09 000 0001</a></dd><dt>Email</dt><dd><a href="mailto:hello@urbanbloom.kiwi">hello@urbanbloom.kiwi</a></dd><dt>Opening hours</dt><dd>Monday to Friday 8:30 am to 5:30 pm<br>Saturday 9:00 am to 3:00 pm<br>Sunday closed</dd><dt>Service area</dt><dd>Central Auckland, including Ponsonby, Grey Lynn, Parnell, Newmarket, Mount Eden, Epsom and Remuera</dd></dl>
+    <p><a href="delivery-faq.html">Read delivery details and FAQs</a></p></div>
+</div></section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div><h2>Urban Bloom Florist</h2><p>Independent florist in Auckland, New Zealand. Flowers, gifts, wedding and event flowers, and corporate floral services.</p></div>
+      <div><h2>Opening hours</h2><p>Monday to Friday: 8:30 am to 5:30 pm<br>Saturday: 9:00 am to 3:00 pm<br>Sunday: Closed</p></div>
+      <div><h2>Contact</h2><p>Phone: <a href="tel:090000001">09 000 0001</a><br>Email: <a href="mailto:hello@urbanbloom.kiwi">hello@urbanbloom.kiwi</a><br><a href="contact.html">Use the enquiry form</a></p></div>
+    </div>
+    <p class="footer-note">Prototype note: images are placeholders in this alpha prototype. Stock photography, with provider credits, will replace them in the final version. Fonts: Fraunces and DM Sans via Google Fonts (Open Font Licence).</p>
+  </div>
+</footer>
+</body>
+</html>
